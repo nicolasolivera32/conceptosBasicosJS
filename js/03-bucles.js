@@ -26,3 +26,13 @@ do {
   document.write(`<p>renglon numero ${contador} con do-while</p>`);
   contador--; //contador = contador - 1
 } while (contador >= 1);
+
+/*
+for(inicializo una variable; condicion logica; incremento o incremento de la variable){
+     todas las lineas de codigo que quiero repetir varias veces
+}
+*/
+
+for (renglon = 1; renglon <= 10; renglon++) {
+  document.write(`<p>renglon numero ${renglon} con for</p>`);
+}
