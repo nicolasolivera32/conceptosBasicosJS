@@ -1,3 +1,11 @@
 .titulo{
     color: rgb(64, 87, 161);
 }
+
+table, td{
+    border: 1px solid rgb(221, 31, 31); 
+}
+
+td{
+    padding: 10px;
+}
