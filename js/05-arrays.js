@@ -66,3 +66,32 @@ for (let i = 0; i < juegos.length; i++) {
   document.write(`<li>${juegos[i]}</li>`);
 }
 document.write(`</ul>`);
+
+// eliminar un elemento del array
+
+juegos.shift()
+document.write(`<h2>Lista de juegos -1 elemento del array (${juegos.length})</h2>`);
+document.write(`<ul>`);
+for (let i = 0; i < juegos.length; i++) {
+  document.write(`<li>${juegos[i]}</li>`);
+}
+document.write(`</ul>`);
+
+
+juegos.splice(3, 1)  //borra un elemento
+// juegos.splice(3, 3) --- a partir del elemento 3 borra los 3 siguientes
+// juegos.splice(3) --- a partir del elemento 3 borra toldos los que siguen
+document.write(`<h2>Lista de juegos -1 elemento del array (${juegos.length})</h2>`);
+document.write(`<ul>`);
+for (let i = 0; i < juegos.length; i++) {
+  document.write(`<li>${juegos[i]}</li>`);
+}
+document.write(`</ul>`);
+
+juegos.pop()
+document.write(`<h2>Lista de juegos -1 elemento del array (${juegos.length})</h2>`);
+document.write(`<ul>`);
+for (let i = 0; i < juegos.length; i++) {
+  document.write(`<li>${juegos[i]}</li>`);
+}
+document.write(`</ul>`);
