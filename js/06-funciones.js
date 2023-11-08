@@ -11,6 +11,12 @@ function saludoNuevo(nombreIngresado, apellidoIngresado) {
   );
 }
 
+function sumar(numero1, numero2) {
+  const resultado = numero1 + numero2;
+  console.log(resultado);
+  return resultado;
+}
+
 // invocar o llamar una funcion
 saludar();
 
@@ -18,3 +24,7 @@ const nombre = prompt("ingrese un nombre");
 const apellido = prompt("ingrese un apellido");
 
 saludoNuevo(nombre, apellido);
+
+const valorResultante = sumar(30,28)
+document.write(`<p>El resultado de la suma es: ${valorResultante}</p>`)
+document.write(`<p>El resultado de la suma es: ${sumar(20,30)}</p>`)
