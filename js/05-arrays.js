@@ -21,6 +21,13 @@ function mostrarJuegos(titulo) {
   document.write(`</ul>`);
 }
 
+const mostrarArray = (arreglo, titulo) => {
+  document.write(`<h2>${titulo}</h2>`);
+  document.write(`<ul>`);
+  arreglo.map((item) => document.write(`<li>${item}</li>`));
+  document.write(`</ul>`);
+};
+
 // cantidad de elementos en el array
 console.log(juegos.length);
 
@@ -71,4 +78,13 @@ mostrarJuegos("Agregamos nuevos Jueguitos");
 // const juegosMKT = juegos.filter((juego)=> condición lógica)
 // const juegosMKT = juegos.filter((juego) => juego === "Mortal Kombat 4");
 const juegosMKT = juegos.filter((juego) => juego.includes("Kombat"));
-alert(juegosMKT)
+
+mostrarArray(juegosMKT, "Familia de Juegos MKT");
+
+const juegoBuscado = juegos.find((itemJuego) => itemJuego === "minecraft");
+const juegoBuscado2 = juegos.find((itemJuego) => itemJuego === "PES");
+document.write(`<p>Juego Buscado: ${juegoBuscado}</p>`);
+
+// (condicion logica)? toda la logica si se cumple la condicion : la logica si no se cumplela condicion
+const respuesta = (juegoBuscado2 !== undefined)? juegoBuscado2 : "No se encontró el término buscado"
+document.write(`<p>Juego Buscado: ${respuesta}</p>`);
