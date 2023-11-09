@@ -64,3 +64,11 @@ mostrarJuegos(`Lista de juegos -1 elemento del array (${juegos.length})`);
 
 juegos.pop();
 mostrarJuegos(`Lista de juegos -1 elemento del array (${juegos.length})`);
+
+juegos.push("Mortal Kombat 1", "Mortal Kombat 2", "Mortal Kombat 3");
+mostrarJuegos("Agregamos nuevos Jueguitos");
+
+// const juegosMKT = juegos.filter((juego)=> condición lógica)
+// const juegosMKT = juegos.filter((juego) => juego === "Mortal Kombat 4");
+const juegosMKT = juegos.filter((juego) => juego.includes("Kombat"));
+alert(juegosMKT)
