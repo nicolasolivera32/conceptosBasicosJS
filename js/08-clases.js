@@ -36,12 +36,27 @@ class ViedeoJuego {
   }
 
   // ----------- aqui declaro mis metodos ------------
-mostrarDatos(){
+  mostrarDatos() {
     document.write(`<ul>
     <li>Titulo: ${this.titulo}</li>
-    <li>Precio: $${this.precio}</li>
+    <li>Precio: $${this.precio}USD</li>
     <li>Genero: ${this.genero}</li>
     <li>Desarrollador: ${this.desarrollador}</li>
-    </ul>`)
+    </ul>`);
+  }
 }
-}
+
+// ----------- crear o instanciar un objeto ------------
+const minecraft = new ViedeoJuego(
+  "Minecraft",
+  30,
+  ["cubitos", "granja", "mundo abierto", "creeper"],
+  "sandbox",
+  2008,
+  "Mojang"
+);
+
+minecraft.mostrarDatos();
+
+document.write(`<p>Titulo del juego: ${minecraft.titulo}, precio: $${minecraft.precio}USD </p>`)
+document.write(`<p>Etiquetas: ${minecraft.etiquetas}</p>`)
