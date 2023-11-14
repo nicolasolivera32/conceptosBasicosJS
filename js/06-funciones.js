@@ -17,7 +17,7 @@ function saludoNuevo(nombreIngresado, apellidoIngresado) {
 //   return resultado;
 // }
 
-// arrow functions
+// --------------- arrow functions ----------------
 // const sumar = (numero1, numero2) => {
 //   const resultado = numero1 + numero2;
 //   console.log(resultado);
